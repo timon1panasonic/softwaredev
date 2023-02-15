@@ -18,10 +18,10 @@ def main():
     tab1, tab2, tab3, tab4 = st.tabs(["Low Cost", "Optimal Power Distribution", "Temperature", "Given Value"])
     # low cost resistors
     with tab1:
+        st.subheader("Low Cost")
         # decades for the E series
         decades = st.slider('Choose how many decades to include', 2, 4, 1, key=10)
         # calculate the resistor values of the defined E series
-        st.subheader("Low Cost")
         st.write(f"Only E12 standard resistors with a deviation of +/- 1% are considered")
         if st.button("Calculate", key=3):
             # List of 1% low cost resistors (EIA E12)
