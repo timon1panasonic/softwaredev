@@ -109,7 +109,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Timon Grosch - timon.grosch@tum.de@timon.grosch@tum.de_client.com
+Timon Grosch - timon.grosch@tum.de
 
 Project Link: [https://github.com/timon1panasonic/software_dev](https://github.com/timon1panasonic/software_dev)
 
