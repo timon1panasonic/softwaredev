@@ -77,14 +77,14 @@ The second tab gives back the optimal power distribution. Here, the optimum mean
 
 
 <!-- USAGE EXAMPLES -->
-## Temperature Change
+### Temperature Change
 
 In the third tab, the temperature change and the temperature coefficients of the two resistors can be set. The output is then the resistors changed by the temperature.
 
 
 
 <!-- ROADMAP -->
-## Resistance Matching
+### Resistance Matching
 
 The fourth tab allows users to set one of the resistance values to a specified value and finds all the matches within the set tolerance.
 
