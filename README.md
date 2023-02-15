@@ -20,9 +20,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/timon1panasonic/software_dev">
-    [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://parallel-resistor-calculator.streamlit.app/)
-  </a>
 
 <h3 align="center">Parallel Resistance Calculator</h3>
 
@@ -45,8 +42,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://parallel-resistor-calculator.streamlit.app/)
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 The Parallel Resistance Calculator is an app built with Streamlit and programmed in Python that allows users to calculate the values for two resistors in parallel for a given target resistance and tolerance. The goal of the app is to find two resistors whose total resistance is as close as possible to the target resistance.
 
