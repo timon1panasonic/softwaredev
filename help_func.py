@@ -77,3 +77,26 @@ def find_parallel_resisitor(target_resistance, tolerance, R_list, R_x):
             best_resist_pair = [R_x, R_y, round(total_resist, 2)]
     R_triple = remove_duplicates(R_triple)
     return R_triple, best_resist_pair
+
+
+def one_perc_deviation(triples):
+    data = []
+    for R in triples:
+        R1_dev = R[0] + 1/100 * R[0]
+        R2_dev = R[1] + 1/100 * R[1]
+        R_total = (R1_dev * R2_dev)/(R1_dev + R2_dev)
+        R_diff = abs(R[2] - R_total)
+        R_diff_per = R_diff/R_total * 100
+        data.append([R[0], R[1], R[2], round(R_diff_per, 1), round(R_diff, 2)])
+    return data
+        
+def temp_change(triples, K1, K2, delta_T):
+    data = []
+    for R in triples:
+        R1_dev = R[0]*(1 + K1 * delta_T) 
+        R2_dev = R[1]*(1 + K2 * delta_T) 
+        R_total = (R1_dev * R2_dev)/(R1_dev + R2_dev)
+        R_diff = abs(R[2] - R_total)
+        R_diff_per = R_diff/R_total * 100
+        data.append([R[0], R[1], R[2], round(R_diff_per, 1), round(R_diff, 2)])
+    return data
